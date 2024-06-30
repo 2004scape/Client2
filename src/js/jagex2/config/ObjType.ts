@@ -244,14 +244,8 @@ export default class ObjType extends ConfigType {
             this.yan2d = dat.g2;
         } else if (code === 7) {
             this.xof2d = dat.g2b;
-            if (this.xof2d > 32767) {
-                this.xof2d -= 65536;
-            }
         } else if (code === 8) {
             this.yof2d = dat.g2b;
-            if (this.yof2d > 32767) {
-                this.yof2d -= 65536;
-            }
         } else if (code === 9) {
             this.code9 = true;
         } else if (code === 10) {

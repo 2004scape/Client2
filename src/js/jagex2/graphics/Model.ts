@@ -1430,7 +1430,7 @@ export default class Model extends Hashable {
         }
 
         const axis: Packet = new Packet(meta.data);
-        axis.pos = meta.faceTextureAxisOffset * 6;
+        axis.pos = meta.faceTextureAxisOffset;
 
         for (let f: number = 0; f < texturedFaceCount; f++) {
             texturedVertexA[f] = axis.g2;
